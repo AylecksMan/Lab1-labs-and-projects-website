@@ -6,15 +6,19 @@ ul{
 ul ul ul {
   margin-top: 10px;
 }
-
+/*site font*/
 .jim-nightshade-regular {
     font-family: "Jim Nightshade", cursive;
     font-weight: 400;
     font-style: normal;
 }
+
+/*background image*/
 /*body{*/
 /*    background-image: url("https://i.ibb.co/Jj2Y8C0t/Untitled-design.png");*/
 /*}*/
+
+/*paragraph styling*/
 p{
     color: #666666;
     background-color: skyblue;
@@ -27,7 +31,8 @@ p{
     box-shadow: 10px 10px;
 
 }
-nav{
+
+span{
     color: #666666;
     background-color: skyblue;
     padding: 5px;
@@ -37,4 +42,63 @@ nav{
     border: black solid 1px;
     border-radius: 10px;
     box-shadow: 10px 10px;
+}
+
+/*nav styling*/
+
+
+nav {
+    color: #666666;
+    background-color: skyblue;
+    padding: 5px;
+    font-family: "Jim Nightshade", cursive;
+    font-weight: 400;
+    font-style: normal;
+    border: black solid 1px;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    min-height: 15px;
+}
+
+
+
+.cow{
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 100px;
+    padding: 0;
+    scale: .6;
+}
+.cow1{
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    padding: 0;
+    scale: .2;
+}
+.cow2{
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    padding: 0;
+    scale: .2;
+}
+.cow3{
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    padding: 0;
+    scale: .2;
 }

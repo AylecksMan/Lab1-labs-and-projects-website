@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab6</title>
+    <style>
+        .flex-parent {
+            border: 1px solid;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+            justify-content: space-evenly; /*flex start, flex end, center, space around, center, space between*/
+            align-items: center;
+        }
+        div img{
+            background-color: lightgray;
+            margin: 10px;
+            width: 100px;
+            padding: 3px;
+            height:100px;
+        }
+        .child1 {
+            min-height: 100px;
+        }
+        .child2 {
+            min-height: 150px;
+        }
+        .child3 {
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-parent">
+        <img class="child1" src="https://picsum.photos/100/100?random=3" alt="pic1">
+        <img class="child2" src="https://picsum.photos/100/150?random=2" alt="pic2">
+        <img class="child3" src="https://picsum.photos/100/100?random=4" alt="pic3">
+    </div>
+
+</body>
+</html>
