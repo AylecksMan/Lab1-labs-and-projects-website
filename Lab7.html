@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab7</title>
+    <style>
+        body{
+            background-color: orange;
+            display : flex;
+        }
+        body >  div{
+            display: flex;
+            flex-wrap: wrap;
+            height: 10vh;
+            align-content: stretch;
+
+        }
+        div > div{
+            background-color: aquamarine;
+            flex-wrap: wrap;
+            align-content: stretch;
+            height: 100px;
+            border: solid 1px;
+            flex-grow: 1;
+            min-width: auto;
+            min-height: 0;
+            max-width: 100%;
+            flex-shrink: 1;
+
+
+        }
+        .flex-parent{
+            overflow-y:auto
+
+        }
+
+        .sidebar{
+            display: flex;
+            justify-content: start;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidechild1">&#x1F4F7;</div>
+        <div class="sidechild2">&#x1F5C4;&#xfe0f;</div>
+        <div class="sidechild3">&#x2764;&#xfe0f;</div>
+        <div class="sidechild4">&#x1F5D1;&#xfe0f;</div>
+    </div>
+    <div id="flex-parent">
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=1" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/200/100?random=2" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/300/100?random=3" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/400/100?random=4" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=5" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=6" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=7" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=8" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=9" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=10" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=11" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=12" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=13" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=14" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=15" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=16" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=17" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=18" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=19" alt="pic1"></div>
+        <div class="flex"><img class="child1" src="https://picsum.photos/100/100?random=20" alt="pic1"></div>
+    </div>
+</body>
+</html>
