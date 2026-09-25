@@ -1,0 +1,8 @@
+body{
+    background-color: lightgray;
+}
+
+header{
+    position: sticky;
+    border: 1px solid black;
+}
