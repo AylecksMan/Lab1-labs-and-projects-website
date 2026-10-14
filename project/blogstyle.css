@@ -6,3 +6,13 @@ header{
     position: sticky;
     border: 1px solid black;
 }
+
+footer{
+    background-color:orange;
+    text-align:center;
+    padding:15px;
+    margin-bottom:40px
+
+
+
+}
