@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box1{
+            background-color: green;
+            color: white;
+            font-size: 1.5em;
+            padding: 1em;
+            text-align: center;
+            width: 300px;
+        }
+        #box1:hover {
+            cursor: pointer;
+        }
+        div{
+            height: 75vh;
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="box1">Click me!</p>
+    <div id="movement"></div>
+    <script>
+
+
+        const box1 = document.getElementById('box1');
+        function myFunction(event) {
+            event.target.style.backgroundColor = 'red';
+            box1.textContent = "Ouch! 🤕";
+            console.log(event)
+        }
+        function hover(event) {
+            event.target.style.backgroundColor = 'yellow';
+
+            box1.textContent = "Do not click! 😠";
+        }
+        function off(event){
+            event.target.style.backgroundColor = 'lightgreen';
+
+            box1.textContent = "Phew! 😌";
+        }
+        function double(event){
+            event.target.style.backgroundColor = 'pink';
+            box1.textContent = "Double trouble! 🤩"
+        }
+        function move(event){
+            box1.style.backgroundColor = 'lightblue';
+            box1.textContent = "I see you! 👀";
+        }
+        box1.addEventListener('click', myFunction);
+        box1.addEventListener('mouseover', hover);
+        box1.addEventListener('mouseout', off);
+        box1.addEventListener('dblclick', double);
+        const movement = document.getElementById('movement');
+        movement.addEventListener('mousemove', move);
+    </script>
+
+</body>
+</html>
