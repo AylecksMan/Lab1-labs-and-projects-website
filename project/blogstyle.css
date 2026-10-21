@@ -5,6 +5,7 @@ body{
 header{
     position: sticky;
     border: 1px solid black;
+    background-image: url("https://i.ibb.co/Y7FhLZ1Z/header.png");
 }
 
 footer{

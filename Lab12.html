@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab12</title>
+</head>
+<body>
+    <h1>Lab12</h1>
+    <p>Your Name</p>
+    <form action="#">
+        <label for="name">What is your name?</label>
+        <input id="name">
+        <button type ="button" id="button">Greet</button>
+        <p id="result"></p>
+
+        <p>First number</p>
+        <input type="number" id="first">
+        <p>Second number</p>
+        <input type="number" id="second">
+        <p>Action</p>
+        <input type="radio" name="action" value ="add">add<br>
+        <input type="radio" name="action" value ="subtract">subtract<br>
+        <input type="radio" name="action" value ="multiply">multiply<br>
+        <input type="radio" name="action" value ="divide">divide<br>
+        <br>
+        <button type="button" id="calc">Calculate</button>
+        <br>
+        <p id="result2"></p>
+
+
+    </form>
+    <script>
+        const name = document.getElementById('name');
+        const result = document.getElementById('result');
+        document.getElementById('button').addEventListener('click', function(){
+            result.textContent = ("Hello " + name.value);
+            console.log(typeof grade.value);
+        });
+
+       
+
+        const a = document.getElementById('first');
+        const b = document.getElementById('second');
+        const add = (a, b) => (a + b);
+        const sub = (a, b) => a - b;
+        const divide = (a, b) => a / b;
+        const multiply = (a, b) => a * b;
+        
+        const result2 = document.getElementById('result2');
+        document.getElementById('calc').addEventListener('click', function(){
+            const action = document.querySelector('[name = action]:checked');
+            if (a.value === '' || b.value === '' || !action){
+                result2.textContent = 'Please input all fields';
+                return;
+            }
+            
+            if (action.value === 'add') {
+                answer = add(Number(a.value), Number(b.value));
+                result2.textContent = answer;
+            }
+            else if (action.value === 'subtract') {
+                answer = sub(Number(a.value), Number(b.value));
+                result2.textContent = answer;
+            }
+            else if (action.value === 'multiply') {
+                answer = multiply(Number(a.value), Number(b.value));
+                result2.textContent = answer;
+            }
+            else if (action.value === 'divide') {
+                
+                answer = divide(Number(a.value), Number(b.value));
+                result2.textContent = answer;
+                
+            }
+        });
+
+
+    </script>
+</body>
+</html>
