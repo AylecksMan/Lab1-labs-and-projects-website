@@ -1,0 +1,12 @@
+main > p{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media (max-width: 900px){
+    main > p{
+        text-align: start;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
