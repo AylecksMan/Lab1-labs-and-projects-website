@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        const url ='https://randomuser.me/api/'
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const img = document.createElement("img");
+                img.src = data.results[0].url;
+                img.width = 300;
+                img.alt = "thumbnail";
+                document.body.appendChild(img);
+            })
+            .catch(error => console.log(error));
+    </script>
+
+</body>
+</html>
