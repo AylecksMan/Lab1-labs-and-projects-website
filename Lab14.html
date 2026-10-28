@@ -2,24 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Lab14</title>
 </head>
 <body>
 
-    <script>
-        const url ='https://randomuser.me/api/'
+<script>
+    const url = 'https://randomuser.me/api/';
+    const button = document.createElement("button");
+    button.textContent = "Fetch Another User";
+    document.body.appendChild(button);
 
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                const img = document.createElement("img");
-                img.src = data.results[0].url;
-                img.width = 300;
-                img.alt = "thumbnail";
-                document.body.appendChild(img);
-            })
-            .catch(error => console.log(error));
-    </script>
+
+    const img = document.createElement("img");
+
+    const name = document.createElement("h1");
+
+
+    const email = document.createElement("h2");
+
+    const phone = document.createElement("h3");
+
+    function refresh(){    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            img.src = data.results[0].picture.large;
+            img.width = 300;
+            img.alt = "Random user photo";
+
+            document.body.appendChild(img);
+            
+            name.textContent = data.results[0].name.first
+
+            document.body.appendChild(name);
+
+            email.textContent = data.results[0].email
+
+            document.body.appendChild(email);
+
+            phone.textContent = data.results[0].phone
+
+            document.body.appendChild(phone);
+
+        })
+        .catch(error => console.log(error));
+    }
+    button.addEventListener("click", refresh);
+    refresh();
+
+</script>
 
 </body>
 </html>
